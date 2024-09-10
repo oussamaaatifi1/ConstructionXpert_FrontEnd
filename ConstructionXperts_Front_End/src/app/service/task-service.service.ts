@@ -15,4 +15,8 @@ export class TaskServiceService {
   getAllTaches() : Observable<tache[]>{
     return this.httpclient.get<tache[]>(`${this.BaseUrl}`);
   }
+
+  createTache(tacheData: tache): Observable<tache> {
+    return this.httpclient.post<tache>(`${this.BaseUrl}`, tacheData);
+  }
 }

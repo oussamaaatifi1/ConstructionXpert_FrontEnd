@@ -22,4 +22,8 @@ export class ListTaskComponent implements OnInit {
       this.taches = data;
     })
   }
+
+  AddTache(): void {
+    this.router.navigate(['/addtache']);
+  }
 }
