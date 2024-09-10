@@ -8,7 +8,9 @@ import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http'; // Add this import
+import { HttpClientModule } from '@angular/common/http';
+import { SidbarComponent } from './layout/sidbar/sidbar.component';
+import { NavbarComponent } from './layout/navbar/navbar.component'; // Add this import
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http'; // Add this import
     AddTaskComponent,
     ListTaskComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    SidbarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
