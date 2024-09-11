@@ -10,7 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { SidbarComponent } from './layout/sidbar/sidbar.component';
-import { NavbarComponent } from './layout/navbar/navbar.component'; // Add this import
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { AddresourcesComponent } from './Resources/addresources/addresources.component'; // Add this import
 
 
 @NgModule({
@@ -21,12 +22,13 @@ import { NavbarComponent } from './layout/navbar/navbar.component'; // Add this 
     LoginComponent,
     SignupComponent,
     SidbarComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddresourcesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule
