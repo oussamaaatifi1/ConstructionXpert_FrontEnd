@@ -8,7 +8,7 @@ import {resources} from "../../model/ressource";
   styleUrls: ['./showresources.component.css']
 })
 export class ShowresourcesComponent {
-  resource : resources[]  = [];
+  Resources : resources[]  = [];
 
   AddResource() {
 
