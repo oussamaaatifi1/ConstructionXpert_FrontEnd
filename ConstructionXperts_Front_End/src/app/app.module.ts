@@ -9,10 +9,12 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+
 import { SidbarComponent } from './layout/sidbar/sidbar.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { AddresourcesComponent } from './Resources/addresources/addresources.component';
 import { ShowresourcesComponent } from './Resources/showresources/showresources.component'; // Add this import
+
 
 
 @NgModule({
@@ -22,10 +24,12 @@ import { ShowresourcesComponent } from './Resources/showresources/showresources.
     ListTaskComponent,
     LoginComponent,
     SignupComponent,
+
     SidbarComponent,
     NavbarComponent,
     AddresourcesComponent,
     ShowresourcesComponent
+
   ],
   imports: [
     BrowserModule,
