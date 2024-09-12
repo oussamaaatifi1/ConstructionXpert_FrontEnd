@@ -1,39 +1,55 @@
-<div class="container mt-5">
-    <h2 class="text-center mb-4">Task List</h2>
-    
-    <div class="table-responsive">
-      <table class="table table-hover table-striped text-center align-middle">
-        <thead class="table-dark">
-          <tr>
-            <th>ID</th>
-            <th>Description</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th>Status</th>
-            <th>Resources</th>
-            <th>Project ID</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let task of taches">
-            <td>{{ task.id }}</td>
-            <td>{{ task.description }}</td>
-            <td>{{ task.startDate }}</td>
-            <td>{{ task.endDate }}</td>
-            <td>
-              <span class="badge" [ngClass]="{
-                'bg-success': task.status === 'Completed',
-                'bg-warning': task.status === 'In Progress',
-                'bg-danger': task.status === 'Overdue'
-              }">
-                {{ task.status }}
-              </span>
-            </td>
-            <td>{{ task.resources }}</td>
-            <td>{{ task.projetId }}</td>
-          </tr>
-        </tbody>
-      </table>
+<app-navbar></app-navbar>
+<app-sidbar></app-sidbar>
+<div class="p-4 sm:ml-64">
+    <div class="p-4 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg h-full dark:bg-gray-900">
+            <!-- Create Task Button -->
+            <div class="mb-4 flex justify-end">
+                <button (click)="AddTache()"
+                    class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 dark:bg-blue-600 dark:hover:bg-blue-700">
+                    Create Task
+                </button>
+            </div>
+
+            <table class="w-full min-w-max text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-600 uppercase bg-gray-200 dark:bg-gray-800 dark:text-gray-300">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">ID</th>
+                        <th scope="col" class="px-6 py-3">Description</th>
+                        <th scope="col" class="px-6 py-3">Start Date</th>
+                        <th scope="col" class="px-6 py-3">End Date</th>
+                        <th scope="col" class="px-6 py-3">Status</th>
+                        <th scope="col" class="px-6 py-3">Resources</th>
+                        <th scope="col" class="px-6 py-3">Project ID</th>
+                        <th scope="col" class="px-6 py-3">Actions</th> <!-- Added column for actions -->
+                    </tr>
+                </thead>
+                <tbody class="bg-white dark:bg-gray-900">
+                    <tr *ngFor="let task of taches"
+                        class="border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
+                        <td class="px-6 py-4 text-center">{{ task.id }}</td>
+                        <td class="px-6 py-4 text-center">{{ task.description }}</td>
+                        <td class="px-6 py-4 text-center">{{ task.startDate }}</td>
+                        <td class="px-6 py-4 text-center">{{ task.endDate }}</td>
+                        <td class="px-6 py-4 text-center">
+                            <span class="bg-blue-500 text-white border border-gray-100 inline-flex items-center px-3 py-1 text-xs font-medium rounded-full">
+                                {{ task.status }}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 text-center">{{ task.resources }}</td>
+                        <td class="px-6 py-4 text-center">{{ task.projetId }}</td>
+                        <td class="px-6 py-4 text-center">
+                            <button (click)="editTask(task.id)" class="text-blue-500 hover:text-blue-700">
+                                Edit
+                            </button>
+                            <button (click)="deleteTask(task.id)" class="text-red-500 hover:text-red-700 ml-2">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-  </div>
-  
+</div>

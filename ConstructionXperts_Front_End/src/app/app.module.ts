@@ -9,7 +9,12 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { ProjetListComponent } from './projet/projet-list/projet-list.component'; // Add this import
+
+import { SidbarComponent } from './layout/sidbar/sidbar.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { AddresourcesComponent } from './Resources/addresources/addresources.component';
+import { ShowresourcesComponent } from './Resources/showresources/showresources.component'; // Add this import
+
 
 
 @NgModule({
@@ -19,12 +24,17 @@ import { ProjetListComponent } from './projet/projet-list/projet-list.component'
     ListTaskComponent,
     LoginComponent,
     SignupComponent,
-    ProjetListComponent
+
+    SidbarComponent,
+    NavbarComponent,
+    AddresourcesComponent,
+    ShowresourcesComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule

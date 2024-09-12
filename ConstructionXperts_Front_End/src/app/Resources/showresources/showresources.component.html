@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<app-sidbar></app-sidbar>
+<div class="p-4 sm:ml-64">
+  <div class="p-4  border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg h-full dark:bg-gray-900">
+<!--      &lt;!&ndash; Create Task Button &ndash;&gt;-->
+<!--      <div class="mb-4 flex justify-end">-->
+<!--        <button (click)="AddResource()"-->
+<!--                class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 dark:bg-blue-600 dark:hover:bg-blue-700">-->
+<!--          Create Task-->
+<!--        </button>-->
+<!--      </div>-->
+
+      <table class="w-full min-w-max text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-600 uppercase bg-gray-200 dark:bg-gray-800 dark:text-gray-300">
+        <tr>
+          <th scope="col" class="px-6 py-3 text-center">ID</th>
+          <th scope="col" class="px-6 py-3 text-center">Name</th>
+          <th scope="col" class="px-6 py-3 text-center">Type</th>
+          <th scope="col" class="px-6 py-3 text-center">Quantity</th>
+          <th scope="col" class="px-6 py-3 text-center">Task ID</th>
+        </tr>
+        </thead>
+        <tbody class="bg-white dark:bg-gray-900">
+        <tr *ngFor="let Resource of Resources" class="border-b dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800">
+          <td class="px-6 py-4 text-center">{{ Resource.id }}</td>
+          <td class="px-6 py-4 text-center">{{ Resource.nom }}</td>
+          <td class="px-6 py-4 text-center">{{ Resource.type }}</td>
+          <td class="px-6 py-4 text-center">{{ Resource.quantity }}</td>
+          <td class="px-6 py-4 text-center">{{ Resource.idTache }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
