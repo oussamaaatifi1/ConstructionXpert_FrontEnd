@@ -11,7 +11,8 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { SidbarComponent } from './layout/sidbar/sidbar.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
-import { AddresourcesComponent } from './Resources/addresources/addresources.component'; // Add this import
+import { AddresourcesComponent } from './Resources/addresources/addresources.component';
+import { ShowresourcesComponent } from './Resources/showresources/showresources.component'; // Add this import
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AddresourcesComponent } from './Resources/addresources/addresources.com
     SignupComponent,
     SidbarComponent,
     NavbarComponent,
-    AddresourcesComponent
+    AddresourcesComponent,
+    ShowresourcesComponent
   ],
   imports: [
     BrowserModule,
