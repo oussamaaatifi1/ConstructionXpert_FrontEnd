@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {resources} from "../../model/ressource";
+import {Router} from "@angular/router";
+import {ResourcesService} from "../../service/ResourceService/resources.service";
 
 
 @Component({
@@ -10,7 +12,15 @@ import {resources} from "../../model/ressource";
 export class ShowresourcesComponent {
   Resources : resources[]  = [];
 
-  AddResource() {
+  constructor(private router : Router , private ResourcesService :ResourcesService) {
+  }
+  ngOnInit(): void {
+    this.getAllResources();
+  }
 
+  getAllResources() : void {
+    this.ResourcesService.getAllResources().subscribe(data =>{
+      this.Resources = data;
+    })
   }
 }
