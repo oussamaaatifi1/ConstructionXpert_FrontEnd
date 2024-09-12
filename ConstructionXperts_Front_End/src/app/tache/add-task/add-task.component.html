@@ -1,59 +1,63 @@
 <app-navbar></app-navbar>
 <app-sidbar></app-sidbar>
+
 <div class="p-4 sm:ml-64">
-    <div class="p-4  border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
-
-        <div class="relative overflow-x-auto shadow-md sm:rounded-lg h-full dark:bg-gray-900">
+    <div class="p-4 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg h-full bg-gray-100 dark:bg-gray-900 p-4">
             <!-- Task Form -->
-            <div class="relative overflow-x-auto shadow-md sm:rounded-lg h-full bg-gray-100 dark:bg-gray-900 p-4">
-                <form class="space-y-4">
-                    <div>
-                        <label for="description" class="block text-gray-700 dark:text-gray-300">Description</label>
-                        <input type="text" id="description" name="description"
-                            class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                            required>
-                    </div>
+            <form [formGroup]="taskForm" (ngSubmit)="createNewTask()" class="space-y-4">
+                <div>
+                    <label for="description" class="block text-gray-700 dark:text-gray-300">Description</label>
+                    <input type="text" id="description" formControlName="description"
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                        required>
+                </div>
 
-                    <div>
-                        <label for="start-date" class="block text-gray-700 dark:text-gray-300">Start Date</label>
-                        <input type="date" id="start-date" name="start-date"
-                            class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                            required>
-                    </div>
+                <div>
+                    <label for="startDate" class="block text-gray-700 dark:text-gray-300">Start Date</label>
+                    <input type="date" id="startDate" formControlName="startDate"
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                        required>
+                </div>
 
-                    <div>
-                        <label for="end-date" class="block text-gray-700 dark:text-gray-300">End Date</label>
-                        <input type="date" id="end-date" name="end-date"
-                            class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                            required>
-                    </div>
+                <div>
+                    <label for="endDate" class="block text-gray-700 dark:text-gray-300">End Date</label>
+                    <input type="date" id="endDate" formControlName="endDate"
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                        required>
+                </div>
 
-                    <div>
-                        <label for="status" class="block text-gray-700 dark:text-gray-300">Status</label>
-                        <select id="status" name="status"
-                            class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                            required>
-                            <option value="Completed">Completed</option>
-                            <option value="In Progress">In Progress</option>
-                            <option value="Overdue">Overdue</option>
-                        </select>
-                    </div>
+                <div>
+                    <label for="status" class="block text-gray-700 dark:text-gray-300">Status</label>
+                    <select id="status" formControlName="status"
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                        required>
+                        <option [ngValue]="Status.COMPLETED">Completed</option>
+                        <option [ngValue]="Status.IN_PROGRESS">In Progress</option>
+                        <option [ngValue]="Status.OVERDUE">Overdue</option>
+                    </select>
+                </div>
 
-                    <div>
-                        <label for="resources" class="block text-gray-700 dark:text-gray-300">Resources</label>
-                        <input type="text" id="resources" name="resources"
-                            class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
-                    </div>
+                <div>
+                    <label for="resources" class="block text-gray-700 dark:text-gray-300">Resources</label>
+                    <input type="text" id="resources" formControlName="resources"
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+                </div>
 
-                    <div class="flex justify-end">
-                        <button type="submit"
-                            class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 dark:bg-blue-600 dark:hover:bg-blue-700">
-                            Submit
-                        </button>
-                    </div>
-                </form>
-            </div>
+                <div>
+                    <label for="projetId" class="block text-gray-700 dark:text-gray-300">Project ID</label>
+                    <input type="number" id="projetId" formControlName="projetId"
+                        class="mt-1 block w-full p-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                        required>
+                </div>
 
+                <div class="flex justify-end">
+                    <button type="submit"
+                        class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 dark:bg-blue-600 dark:hover:bg-blue-700">
+                        Submit
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
