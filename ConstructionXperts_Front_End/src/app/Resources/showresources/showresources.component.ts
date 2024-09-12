@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {resources} from "../../model/ressource";
+
 
 @Component({
   selector: 'app-showresources',
@@ -6,9 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./showresources.component.css']
 })
 export class ShowresourcesComponent {
-  Resource: (NgIterable<unknown> & NgIterable<any>) | undefined | null;
+  resource : resources[]  = [];
 
   AddResource() {
-    
+
   }
 }
