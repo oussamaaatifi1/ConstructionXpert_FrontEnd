@@ -1,0 +1,47 @@
+<div class="p-4 sm:ml-64">
+    <div class="p-4 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg h-full dark:bg-gray-900">
+            <h2 class="text-lg font-semibold mb-4">Edit Task</h2>
+            <form (ngSubmit)="onSubmit()" #editForm="ngForm">
+                <div class="mb-4">
+                    <label for="description" class="block text-gray-700 dark:text-gray-300">Description</label>
+                    <input id="description" name="description" [(ngModel)]="task.description" required
+                        class="form-input mt-1 block w-full" />
+                </div>
+                <div class="mb-4">
+                    <label for="startDate" class="block text-gray-700 dark:text-gray-300">Start Date</label>
+                    <input id="startDate" name="startDate" [(ngModel)]="task.startDate" type="date" required
+                        class="form-input mt-1 block w-full" />
+                </div>
+                <div class="mb-4">
+                    <label for="endDate" class="block text-gray-700 dark:text-gray-300">End Date</label>
+                    <input id="endDate" name="endDate" [(ngModel)]="task.endDate" type="date" required
+                        class="form-input mt-1 block w-full" />
+                </div>
+                <div class="mb-4">
+                    <label for="status" class="block text-gray-700 dark:text-gray-300">Status</label>
+                    <select id="status" name="status" [(ngModel)]="task.status" required
+                        class="form-select mt-1 block w-full">
+                        <option value="NOT_STARTED">Not Started</option>
+                        <option value="IN_PROGRESS">In Progress</option>
+                        <option value="COMPLETED">Completed</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="resources" class="block text-gray-700 dark:text-gray-300">Resources</label>
+                    <input id="resources" name="resources" [(ngModel)]="task.resources" required
+                        class="form-input mt-1 block w-full" />
+                </div>
+                <div class="mb-4">
+                    <label for="projetId" class="block text-gray-700 dark:text-gray-300">Project ID</label>
+                    <input id="projetId" name="projetId" [(ngModel)]="task.projetId" type="number" required
+                        class="form-input mt-1 block w-full" />
+                </div>
+                <button type="submit"
+                    class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 dark:bg-blue-600 dark:hover:bg-blue-700">
+                    Update Task
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
