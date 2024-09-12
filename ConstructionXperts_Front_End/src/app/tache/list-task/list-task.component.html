@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <app-sidbar></app-sidbar>
 <div class="p-4 sm:ml-64">
-    <div class="p-4  border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+    <div class="p-4 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
 
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg h-full dark:bg-gray-900">
             <!-- Create Task Button -->
@@ -22,6 +22,7 @@
                         <th scope="col" class="px-6 py-3">Status</th>
                         <th scope="col" class="px-6 py-3">Resources</th>
                         <th scope="col" class="px-6 py-3">Project ID</th>
+                        <th scope="col" class="px-6 py-3">Actions</th> <!-- Added column for actions -->
                     </tr>
                 </thead>
                 <tbody class="bg-white dark:bg-gray-900">
@@ -32,16 +33,20 @@
                         <td class="px-6 py-4 text-center">{{ task.startDate }}</td>
                         <td class="px-6 py-4 text-center">{{ task.endDate }}</td>
                         <td class="px-6 py-4 text-center">
-                            <span [ngClass]="{
-                            'bg-green-500 text-white': task.status === 'Completed',
-                            'bg-yellow-500 text-white': task.status === 'In Progress',
-                            'bg-red-500 text-white': task.status === 'Overdue'
-                        }" class="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full">
+                            <span class="bg-blue-500 text-white border border-gray-100 inline-flex items-center px-3 py-1 text-xs font-medium rounded-full">
                                 {{ task.status }}
                             </span>
                         </td>
                         <td class="px-6 py-4 text-center">{{ task.resources }}</td>
                         <td class="px-6 py-4 text-center">{{ task.projetId }}</td>
+                        <td class="px-6 py-4 text-center">
+                            <button (click)="editTask(task.id)" class="text-blue-500 hover:text-blue-700">
+                                Edit
+                            </button>
+                            <button (click)="deleteTask(task.id)" class="text-red-500 hover:text-red-700 ml-2">
+                                Delete
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
