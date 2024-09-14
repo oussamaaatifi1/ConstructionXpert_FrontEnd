@@ -8,15 +8,31 @@ import { tache } from '../model/tache';
 })
 export class TaskServiceService {
 
-  constructor(private httpclient : HttpClient) { }
-
   private BaseUrl = 'http://localhost:8084/taches';
 
-  getAllTaches() : Observable<tache[]>{
-    return this.httpclient.get<tache[]>(`${this.BaseUrl}`);
+  constructor(private httpclient: HttpClient) { }
+
+  getAllTaches(): Observable<tache[]> {
+    return this.httpclient.get<tache[]>(this.BaseUrl);
   }
 
   createTache(tacheData: tache): Observable<tache> {
-    return this.httpclient.post<tache>(`${this.BaseUrl}`, tacheData);
+    return this.httpclient.post<tache>(this.BaseUrl, tacheData);
+  }
+
+  getTaskById(id: number): Observable<tache> {
+    return this.httpclient.get<tache>(`${this.BaseUrl}/${id}`);
+  }
+
+  updateTache(id: number, tacheData: tache): Observable<tache> {
+    return this.httpclient.put<tache>(`${this.BaseUrl}/${id}`, tacheData);
+  }
+
+  deleteTache(id: number): Observable<void> {
+    return this.httpclient.delete<void>(`${this.BaseUrl}/${id}`);
+  }
+
+  getTasksByProjectId(projectId: number): Observable<tache[]> {
+    return this.httpclient.get<tache[]>(`${this.BaseUrl}/project/${projectId}`);
   }
 }

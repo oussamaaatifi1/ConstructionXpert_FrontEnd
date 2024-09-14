@@ -10,8 +10,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { SidbarComponent } from './layout/sidbar/sidbar.component';
-import { NavbarComponent } from './layout/navbar/navbar.component'; // Add this import
-
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { DeleteTacheComponent } from './tache/delete-tache/delete-tache.component';
+import { EditTacheComponent } from './tache/edit-tache/edit-tache.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Added for Angular Material
+import { MatIconModule } from '@angular/material/icon'; // Import MatIconModule
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -21,7 +28,9 @@ import { NavbarComponent } from './layout/navbar/navbar.component'; // Add this 
     LoginComponent,
     SignupComponent,
     SidbarComponent,
-    NavbarComponent
+    NavbarComponent,
+    DeleteTacheComponent,
+    EditTacheComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +38,14 @@ import { NavbarComponent } from './layout/navbar/navbar.component'; // Add this 
     FormsModule, 
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
