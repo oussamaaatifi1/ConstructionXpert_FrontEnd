@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import {resources} from "../../model/ressource";
+import { resourcesModel} from "../../model/resourcesModel";
 import {Router} from "@angular/router";
-import {ResourcesService} from "../../service/ResourceService/resources.service";
-
+import {ResourceService} from "../../service/ResourceService/resource.service";
 
 @Component({
   selector: 'app-showresources',
@@ -10,9 +9,9 @@ import {ResourcesService} from "../../service/ResourceService/resources.service"
   styleUrls: ['./showresources.component.css']
 })
 export class ShowresourcesComponent {
-  Resources : resources[]  = [];
+  resourcesModel : resourcesModel[]  = [];
 
-  constructor(private router : Router , private ResourcesService :ResourcesService) {
+  constructor(private router : Router , private ResourcesService :ResourceService) {
   }
   ngOnInit(): void {
     this.getAllResources();
@@ -20,7 +19,8 @@ export class ShowresourcesComponent {
 
   getAllResources() : void {
     this.ResourcesService.getAllResources().subscribe(data =>{
-      this.Resources = data;
+      this.resourcesModel = data;
     })
   }
+
 }

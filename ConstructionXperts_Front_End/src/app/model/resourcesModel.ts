@@ -1,4 +1,4 @@
-export class resources {
+export class resourcesModel {
   id!: number;
   nom!: string;
   type!: string;
