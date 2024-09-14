@@ -1,0 +1,6 @@
+com\projet\repository\ProjetRepository.class
+com\projet\controller\ProjetController.class
+com\projet\ProjetApplication.class
+com\projet\service\impl\ProjetServiceImpl.class
+com\projet\model\Projet.class
+com\projet\service\ProjetService.class
