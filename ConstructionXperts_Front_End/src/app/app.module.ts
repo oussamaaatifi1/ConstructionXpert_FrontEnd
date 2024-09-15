@@ -13,7 +13,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { SidbarComponent } from './layout/sidbar/sidbar.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { AddresourcesComponent } from './Resources/addresources/addresources.component';
-import { ShowresourcesComponent } from './Resources/showresources/showresources.component'; // Add this import
+import { ShowresourcesComponent } from './Resources/showresources/showresources.component';
+import { ProjetListComponent } from './projet/projet-list/projet-list.component';
+import { CreateProjetComponent } from './projet/create-projet/create-projet.component';
+import { UpdateProjetComponent } from './projet/update-projet/update-projet.component'; // Add this import
 
 
 
@@ -28,7 +31,10 @@ import { ShowresourcesComponent } from './Resources/showresources/showresources.
     SidbarComponent,
     NavbarComponent,
     AddresourcesComponent,
-    ShowresourcesComponent
+    ShowresourcesComponent,
+    ProjetListComponent,
+    CreateProjetComponent,
+    UpdateProjetComponent
 
   ],
   imports: [
