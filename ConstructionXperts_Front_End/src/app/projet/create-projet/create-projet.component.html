@@ -1,0 +1,21 @@
+<div class="form-container">
+  <h2>Ajouter un Nouveau Projet</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label>Nom du projet</label>
+    <input type="text" [(ngModel)]="projet.nom_projet" name="nom_projet" required>
+
+    <label>Description</label>
+    <textarea [(ngModel)]="projet.description" name="description" required></textarea>
+
+    <label>Date de début</label>
+    <input type="date" [(ngModel)]="projet.date_debut" name="date_debut" required>
+
+    <label>Date de fin</label>
+    <input type="date" [(ngModel)]="projet.date_fin" name="date_fin" required>
+
+    <label>Budget</label>
+    <input type="text" [(ngModel)]="projet.budget" name="budget" required>
+
+    <button type="submit" class="save-btn">Sauvegarder</button>
+  </form>
+</div>
