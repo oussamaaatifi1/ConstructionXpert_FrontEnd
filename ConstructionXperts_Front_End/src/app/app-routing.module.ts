@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListTaskComponent } from './tache/list-task/list-task.component';
-import { AddTaskComponent } from './tache/add-task/add-task.component';
-import {AddresourcesComponent} from "./Resources/addresources/addresources.component";
-import {ShowresourcesComponent} from "./Resources/showresources/showresources.component";
+import {CreateProjetComponent} from "./projet/create-projet/create-projet.component";
+import {ProjetListComponent} from "./projet/projet-list/projet-list.component";
+import {UpdateProjetComponent} from "./projet/update-projet/update-projet.component";
 
 const routes: Routes = [
-  {path : 'listtache', component : ListTaskComponent},
-  {path : 'addtache',component : AddTaskComponent},
-  {path : 'AddResources',component : AddresourcesComponent},
-  {path : 'ShowResources',component : ShowresourcesComponent},
+  {path : '', component : ProjetListComponent},
+  {path : 'listprojet', component : ListTaskComponent},
+  {path : 'createprojet', component : CreateProjetComponent },
+
+  {path : 'UpdateProjet', component : UpdateProjetComponent}
 
 ];
 
