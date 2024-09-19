@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e162506-34fc-46d9-8bc2-7c6487eaffe7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tache/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tache/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tache/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilisateur/src/main/java/com/projetss/utilisateur/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet/src/main/java/com/projet/controller/ProjetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet/src/main/java/com/projet/controller/ProjetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet/src/main/java/com/projet/repository/ProjetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet/src/main/java/com/projet/repository/ProjetRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet/src/main/java/com/projet/service/ProjetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet/src/main/java/com/projet/service/ProjetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet/src/main/java/com/projet/service/impl/ProjetServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet/src/main/java/com/projet/service/impl/ProjetServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Projet/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tache/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tache/src/main/java/com/projetss/tache/controller/TacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tache/src/main/java/com/projetss/tache/controller/TacheController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tache/src/main/java/com/projetss/tache/model/Tache.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tache/src/main/java/com/projetss/tache/model/Tache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tache/src/main/java/com/projetss/tache/repository/TacheRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tache/src/main/java/com/projetss/tache/repository/TacheRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tache/src/main/java/com/projetss/tache/service/TachService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tache/src/main/java/com/projetss/tache/service/TachService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tache/src/main/java/com/projetss/tache/service/impl/TachServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tache/src/main/java/com/projetss/tache/service/impl/TachServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2lVqzSmeFK3naOF4GW7Ak9pAifQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.Projet [clean].executor": "Run",
+    "Maven.Projet [install].executor": "Run",
+    "Maven.Tache [clean].executor": "Run",
+    "Maven.Tache [package].executor": "Run",
+    "Maven.discovery [clean].executor": "Run",
+    "Maven.discovery [package].executor": "Run",
+    "Maven.ressources [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.DiscoveryApplication.executor": "Run",
+    "Spring Boot.GatwayApplication.executor": "Run",
+    "Spring Boot.ProjetApplication.executor": "Run",
+    "Spring Boot.TacheApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/Desktop/ConstructionXpert_FrontEnd/ConstructionXperts_Front_End",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\ConstructionXpert_projet\Projet_Microservice\Tache\src\main\java\com\projetss\tache" />
+      <recent name="C:\Users\user\Desktop\ConstructionXpert_projet\Projet_Microservice\Tache" />
+      <recent name="C:\Users\user\Desktop\ConstructionXpert_projet\Projet_Microservice\discovery" />
+      <recent name="C:\Users\user\Desktop\Projet_Microservice\config-server\src\main\resources\Configuration" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\ConstructionXpert_projet\Projet_Microservice\discovery" />
+      <recent name="C:\Users\user\Desktop\ConstructionXpert_projet\Projet_Microservice" />
+      <recent name="C:\Users\user\Desktop\ConstructionXpert_projet\Projet_Microservice\discovery\discovery" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatwayApplication">
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.configser.config_server.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.discovery.discovery.DiscoveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatwayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gatway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gateway.gatway.GatwayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjetApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Projet" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.projet.ProjetApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Tache" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.projetss.tache.TacheApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilisateurApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="utilisateur" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.projetss.utilisateur.UtilisateurApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.GatwayApplication" />
+      <item itemvalue="Spring Boot.DiscoveryApplication" />
+      <item itemvalue="Spring Boot.ProjetApplication" />
+      <item itemvalue="Spring Boot.TacheApplication" />
+      <item itemvalue="Spring Boot.UtilisateurApplication" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e162506-34fc-46d9-8bc2-7c6487eaffe7" name="Changes" comment="" />
+      <created>1725275860901</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725275860901</updated>
+      <workItem from="1725275867464" duration="32106000" />
+      <workItem from="1725991685121" duration="166000" />
+      <workItem from="1725991858353" duration="296000" />
+      <workItem from="1725992626354" duration="110000" />
+      <workItem from="1725992743538" duration="1435000" />
+      <workItem from="1726042803607" duration="14487000" />
+      <workItem from="1726131684377" duration="5483000" />
+      <workItem from="1726677232458" duration="1234000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/Projet/src/main/java/com/projet/model/Projet.java</url>
+          <line>22</line>
+          <properties field="startDate" class="com.projet.model.Projet" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

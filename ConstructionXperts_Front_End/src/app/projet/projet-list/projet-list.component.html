@@ -1,0 +1,14 @@
+<div class="projets-container">
+    <div class="projet-card" *ngFor="let projet of projets">
+        <h2>{{ projet.nom_projet }}</h2>
+        <p>{{ projet.description }}</p>
+        <p><strong>Date début:</strong> {{ projet.date_debut | date }}</p>
+        <p><strong>Date fin:</strong> {{ projet.date_fin | date }}</p>
+        <p><strong>Budget:</strong> {{ projet.budget }}</p>
+
+        <div class="actions">
+            <button class="task-btn" (click)="manageTasks(projet.idProjet)">Gérer les tâches</button>
+            <button class="delete-btn" (click)="deleteProjet(projet.idProjet)">Supprimer</button>
+        </div>
+    </div>
+</div>

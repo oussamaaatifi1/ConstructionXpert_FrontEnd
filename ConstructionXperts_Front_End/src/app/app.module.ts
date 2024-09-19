@@ -14,11 +14,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { DeleteTacheComponent } from './tache/delete-tache/delete-tache.component';
 import { EditTacheComponent } from './tache/edit-tache/edit-tache.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Added for Angular Material
-import { MatIconModule } from '@angular/material/icon'; // Import MatIconModule
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
@@ -35,17 +31,13 @@ import { MatCardModule } from '@angular/material/card';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule,
     BrowserAnimationsModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatCardModule
-    
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
