@@ -1,4 +1,30 @@
 <div class="projets-container">
+<<<<<<< HEAD
+  <!-- Bouton pour créer un nouveau projet -->
+  <div class="create-projet-btn">
+    <button (click)="goToCreateProjet()">Créer un Projet</button>
+  </div>
+
+  <!-- Affichage des projets existants -->
+  <div class="projet-card" *ngFor="let projet of projets">
+    <h2>{{ projet.nom_projet }}</h2>
+    <p>{{ projet.description }}</p>
+    <p><strong>Date début:</strong> {{ projet.date_debut | date }}</p>
+    <p><strong>Date fin:</strong> {{ projet.date_fin | date }}</p>
+    <p><strong>Budget:</strong> {{ projet.budget }}</p>
+
+    <div class="actions">
+      <!-- Bouton pour gérer les tâches d'un projet -->
+      <button class="task-btn" (click)="manageTasks(projet.idProjet)">Gérer les tâches</button>
+
+      <!-- Bouton pour modifier le projet -->
+      <button class="edit-btn" (click)="goToUpdateProjet(projet.idProjet)">Modifier</button>
+
+      <!-- Bouton pour supprimer le projet -->
+      <button class="delete-btn" (click)="deleteProjet(projet.idProjet)">Supprimer</button>
+    </div>
+  </div>
+=======
     <div class="projet-card" *ngFor="let projet of projets">
         <h2>{{ projet.nom_projet }}</h2>
         <p>{{ projet.description }}</p>
@@ -11,4 +37,5 @@
             <button class="delete-btn" (click)="deleteProjet(projet.idProjet)">Supprimer</button>
         </div>
     </div>
+>>>>>>> 8e5ed50fc036e2d7c50d57f07c3ff1456ee8b3f0
 </div>
