@@ -9,22 +9,18 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-<<<<<<< HEAD
-import { ProjetListComponent } from './projet/projet-list/projet-list.component';
-import {CreateProjetComponent} from "./projet/create-projet/create-projet.component";
-import {UpdateProjetComponent} from "./projet/update-projet/update-projet.component"; // Add this import
-=======
-
 import { SidbarComponent } from './layout/sidbar/sidbar.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
+import { DeleteTacheComponent } from './tache/delete-tache/delete-tache.component';
+import { EditTacheComponent } from './tache/edit-tache/edit-tache.component';
 import { AddresourcesComponent } from './Resources/addresources/addresources.component';
 import { ShowresourcesComponent } from './Resources/showresources/showresources.component';
-import { ProjetListComponent } from './projet/projet-list/projet-list.component';
-import { CreateProjetComponent } from './projet/create-projet/create-projet.component';
-import { UpdateProjetComponent } from './projet/update-projet/update-projet.component'; // Add this import
-
->>>>>>> 8e5ed50fc036e2d7c50d57f07c3ff1456ee8b3f0
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Added for Angular Material
+import { MatIconModule } from '@angular/material/icon'; // Import MatIconModule
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -33,21 +29,12 @@ import { UpdateProjetComponent } from './projet/update-projet/update-projet.comp
     ListTaskComponent,
     LoginComponent,
     SignupComponent,
-<<<<<<< HEAD
-    ProjetListComponent,
-    CreateProjetComponent,
-    UpdateProjetComponent
-=======
-
     SidbarComponent,
     NavbarComponent,
+    DeleteTacheComponent,
+    EditTacheComponent,
     AddresourcesComponent,
-    ShowresourcesComponent,
-    ProjetListComponent,
-    CreateProjetComponent,
-    UpdateProjetComponent
-
->>>>>>> 8e5ed50fc036e2d7c50d57f07c3ff1456ee8b3f0
+    ShowresourcesComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +42,13 @@ import { UpdateProjetComponent } from './projet/update-projet/update-projet.comp
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
